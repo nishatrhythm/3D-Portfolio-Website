@@ -541,13 +541,13 @@ body {
 
 /* Red Tooltip Text */
 .tooltip.red-tooltip .tooltiptext {
-  background-color:  #8B0000;  /* Set the background color to red */
-  width: 15rem; 
+  background-color:  #c3ab12;  /* Set the background color to red */
+  width: 6rem; 
 }
 
 /* Red Tooltip Arrow */
 .tooltip.red-tooltip .tooltiptext::after {
-  border-color: transparent transparent  #8B0000 transparent; /* Adjust border-color */
+  border-color: transparent transparent  #c3ab12 transparent; /* Adjust border-color */
 }
 
 /* Show Tooltip on Hover */
