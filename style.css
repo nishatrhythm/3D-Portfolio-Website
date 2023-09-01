@@ -501,3 +501,57 @@ body {
   color: var(--white-color);
   background: var(--main-color);
 }
+
+/* Tooltip Container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip Text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 5rem;
+  font-size: 0.7rem;
+  background-color: var(--main-color);
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 125%; /* Change from bottom to top */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip Arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%; /* Change from top to bottom */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--main-color) transparent; /* Adjust border-color */
+}
+
+/* Red Tooltip Text */
+.tooltip.red-tooltip .tooltiptext {
+  background-color:  #8B0000;  /* Set the background color to red */
+  width: 15rem; 
+}
+
+/* Red Tooltip Arrow */
+.tooltip.red-tooltip .tooltiptext::after {
+  border-color: transparent transparent  #8B0000 transparent; /* Adjust border-color */
+}
+
+/* Show Tooltip on Hover */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
