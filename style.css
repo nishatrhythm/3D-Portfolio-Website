@@ -490,3 +490,14 @@ body {
   transform: translateX(-50%) scale(1);
   top: -1.8rem;
 }
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--white-color);
+  background: var(--main-color);
+}
+
+::selection {
+  color: var(--white-color);
+  background: var(--main-color);
+}
